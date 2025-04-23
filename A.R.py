@@ -185,8 +185,8 @@ for campo in campos:
     campo.config(validate="key", validatecommand=(validarnumero, "%S"))
 
 
-botao1 = customtkinter.CTkButton(janela, text= "iniciar",fg_color="#381328", border_color="#381328", hover_color=scolor, cursor="hand2", bg_color=pcolor, corner_radius= 50, command= iniciar_automacao)
-botao1.place(x=350, y=310)   
+botao1 = Button(janela, width=10, text="Iniciar", command=iniciar_automacao, bd=0, bg=scolor, fg=pcolor) 
+botao1.place(x=480, y=400)   
 
 
 carregar_dados()
